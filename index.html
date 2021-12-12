@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mohammad Bayat</title>
+    <style>
+        *{
+            font: 14px 'B Yekan';
+            margin:0px;
+            padding: 0px;
+            direction: rtl;
+            border: none;
+        }
+        body{
+            background: #353b48;
+            position: relative;
+        }
+        #Profile{
+            border-radius: 50px;
+            -webkit-transition: width 2s;
+            transition: width 2s;
+            height: 550px;
+            width: 400px;
+            position: absolute;
+            right: 90px;
+            top: 45px;
+            box-shadow: 0px 0px 30px #000;
+            z-index: 1;
+            padding: 0px;
+            text-align: center;
+            background-color: #c23616;
+        }
+        #profile:hover{
+            width: 100px;
+        }
+        #ProfileImg{
+            height: 330px;
+            width: 400px;
+            background-image: url("img/840ba933-23a9-470f-aba0-31d42d35ac10.jpeg");
+            background-position: -300px -250px;
+            /*background-size: auto 300px;*/
+            background-repeat: no-repeat;
+        }
+        /*#Profile:after{*/
+        /*    content: "";*/
+        /*    position: absolute;*/
+        /*    bottom:-25px;*/
+        /*    left: 0px;*/
+        /*    width: 300px;*/
+        /*    height: 0px;*/
+        /*    border-left: 50px solid transparent;*/
+        /*    border-right: 50px solid transparent;*/
+        /*    border-top: 25px solid #c23616;*/
+        /*}*/
+        #Biographi{
+            height: 450px;
+            width: 850px;
+            position: absolute;
+            top: 95px;
+            right: 380px;
+            z-index: 0;
+            background: #e1b12c;
+            box-shadow: 0px 0px 30px #000;
+            border-radius: 50px;
+        }
+        /*#Biographi:after{*/
+        /*    content: "";*/
+        /*    position: absolute;*/
+        /*    bottom:0px;*/
+        /*    left: -50px;*/
+        /*    width: 0px;*/
+        /*    height: 350px;*/
+        /*    border-top: 50px solid transparent;*/
+        /*    border-bottom: 50px solid transparent;*/
+        /*    border-right: 50px solid #e1b12c;*/
+        /*}*/
+        #Name{
+            position: absolute;
+            top: 360px;
+            right: 50px;
+            font-family: "B Titr";
+            font-size: 80px;
+            color: #e3694b;
+        }
+        #Univercity{
+            position: absolute;
+            top: 420px;
+            right: 30px;
+            font-family: "B Titr";
+            font-size: 30px;
+            color: #e3694b;
+        }
+        #DownloadBtn{
+            border-radius: 20px;
+            position: absolute;
+            top: 500px;
+            left: 115px;
+            height: 30px;
+            width: 200px;
+            font-family: "B Titr";
+            font-size: 16px;
+            background-color: #ffd700;
+            color: #e84118;
+        }
+        .logo{
+            width: 30px;
+            margin-left: 15px;
+            opacity: 20%;
+            transition: opacity 1s;
+        }
+        .logo:hover{
+            transition: opacity ease-out 1s;
+            opacity: 100%;
+            /*transform: rotate(40deg);*/
+        }
+        #SocialPages{
+            position: absolute;
+            top: 500px;
+            right: 110px;
+        }
+        #About , #My{
+            font-family: "B Titr";
+            color: #c23616;
+            font-size: 30px;
+        }
+        #Me , #Abality{
+            font-family: "B Titr";
+            color: gold;
+            font-size: 30px;
+        }
+        #Fiverate{
+            font-family: "B Titr";
+            color: darkgreen;
+            font-size: 30px;
+        }
+        .content{
+            position: absolute;
+            right: 130px;
+        }
+        #AboutMe{
+            top: 20px;
+        }
+        #MyAbality{
+            top: 255px;
+        }
+        .Praghraph{
+            font-size: 16px;
+            margin-top: 10px;
+            width: 250px;
+            text-align: justify;
+            text-align-all: justify;
+            line-height: 30px;
+        }
+        .Box{
+            display: inline-block;
+        }
+        #Box1 {
+            width: 260px;
+            border-left: 2px dashed #000;
+        }
+        #Box2{
+            width: 430px;
+            margin-right: 5px;
+        }
+        #Box3{
+            width: 220px;
+            border-left: 2px dashed #000;
+            text-align:justify;
+        }
+        #Box4{
+            width: 220px;
+            border-left: 2px dashed #000;
+            text-align:justify;
+        }
+        .D{
+            color: #c23616;
+            font-size: 15px;
+        }
+        .Boxes{
+            border-bottom: 2px dashed #000;
+            padding-bottom: 5px;
+        }
+        #Bo2{
+            margin-top: 8px;
+            border-top: 2px dashed #000;
+            width: 700px;
+            border-right: 2px dashed #000;
+            height: 155px;
+        }
+        .title1{
+            font-family: "B Titr";
+            font-size: 18px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            color: #192a56;
+        }
+        .title2{
+            font-family: "B Titr";
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #192a56;
+        }
+        .list{
+            margin-right: 40px;
+            list-style-position: outside;
+        }
+        .item{
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+        .OddItem{
+            color: #353b48;
+        }
+        .EvenItem{
+            color: #396ab0;
+        }
+    </style>
+</head>
+<body>
+    <div id="Profile">
+        <div id="ProfileImg"></div>
+        <span id="Name">محمد بیات</span>
+        <span id="Univercity">_______________________<br>دانشجوی دانشگاه صنعتی شریف</span>
+        <div id="SocialPages">
+            <a href="#"><img src=""><img class="logo" src="img/icons8-instagram-30.png"></a>
+            <a href="#"><img src=""><img class="logo" src="img/icons8-telegram-app-50.png"></a>
+            <a href="#"><img src=""><img class="logo" src="img/icons8-twitter-30.png"></a>
+            <a href="#"><img src=""><img class="logo" src="img/icons8-whatsapp-30.png"></a>
+        </div>
+<!--        <input type="button" id="DownloadBtn" value="دانلود رزومه">-->
+    </div>
+    <div id="Biographi">
+        <div class="content" id="AboutMe">
+            <span class="title" id="About"> درباره</span>
+            <span class="title" id="Me">من</span>
+            -------------------------------------------------------------------------
+            <div class="Boxes">
+                <div class="Box" id="Box1">
+                    <p class="Praghraph">
+                    سلام. محمد بیات هستم .
+                    حدود ۳ ساله برنامه نویسی کار میکنم . و علاقه زیادی به ریاضیات دارم .
+                    به ورزش های رزمی و کشتی علاقه دارم دوره دبیرستان رو در دبیرستان نمونه دولتی روزبه خوندم
+                    راهنمایی رو تو مدرسه علامه طباطبایی .
+                    </p>
+                </div>
+                <div class="Box" id="Box2">
+                    <span class="D">سال تولد :</span>
+                    ----------------------------------------
+                    <span class="D">۱۳۸۱</span>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="D">ساکن :</span>
+                    -------------------------------------------
+                    <span class="D">زنجان</span>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="D">تلفن همراه :</span>
+                    -------------------------------
+                    <span class="D">۰۹۱۹۹۹۷۹۷۸۶</span>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="D">آدرس :</span>
+                    --------------------
+                    <span class="D">زنجان − الهیه − خیابان سوم − پلاک ۱۰</span>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="MyAbality">
+            <span class="title" id="Abality">توانایی ها و</span>
+            <span class="title" id="Fiverate">علایق</span>
+            <span class="title" id="My">من</span>
+            <div class="" id="Bo2">
+                <div class="Box" id="Box3">
+
+                </div>
+                <div class="Box" id="Box4">
+
+                </div>
+                <div class="Box">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
